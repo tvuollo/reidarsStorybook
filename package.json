@@ -6,7 +6,10 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook -c .storybook -o .out"
+        "build-storybook": "build-storybook -c .storybook -o .out",
+        "dev": "webpack --config webpack.config.dev.js",
+        "build": "rimraf dist && webpack --config webpack.config.prod.js",
+        "clean": "rimraf dist"
     },
     "dependencies": {
         "@pickra/copy-code-block": "^1.2.0"
@@ -16,9 +19,15 @@
         "@storybook/html": "^5.3.10",
         "babel-loader": "^8.0.6",
         "css-loader": "^3.4.2",
+        "file-loader": "^4.2.0",
+        "mini-css-extract-plugin": "^0.8.0",
         "node-sass": "^4.13.1",
+        "rimraf": "^2.6.2",
         "sass-loader": "^8.0.2",
-        "style-loader": "^1.1.3"
+        "style-loader": "^1.1.3",
+        "url-loader": "^2.2.0",
+        "webpack": "^4.41.0",
+        "webpack-cli": "^3.3.9"
     },
     "repository": {
         "type": "git",

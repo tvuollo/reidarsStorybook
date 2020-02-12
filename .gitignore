@@ -102,7 +102,10 @@ dist
 
 # TernJS port file
 .tern-port
+/.vs
 /.vs/reidarsStorybook/config/applicationhost.config
 /.vs/reidarsStorybook/v16/.suo
 /.vs/slnx.sqlite
 /.vs/VSWorkspaceState.json
+
+/.out

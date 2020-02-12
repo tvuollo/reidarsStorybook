@@ -1,0 +1,33 @@
+{
+    "name": "reidarsstorybook",
+    "version": "1.0.0",
+    "description": "Storybook.js project for www.reidarshockey.com",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook -c .storybook -o .out"
+    },
+    "dependencies": {
+        "@pickra/copy-code-block": "^1.2.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.8.4",
+        "@storybook/html": "^5.3.10",
+        "babel-loader": "^8.0.6",
+        "css-loader": "^3.4.2",
+        "node-sass": "^4.13.1",
+        "sass-loader": "^8.0.2",
+        "style-loader": "^1.1.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tvuollo/reidarsStorybook.git"
+    },
+    "author": "Tuomas Vuollo",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tvuollo/reidarsStorybook/issues"
+    },
+    "homepage": "https://github.com/tvuollo/reidarsStorybook#readme"
+}

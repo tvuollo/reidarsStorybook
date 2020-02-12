@@ -1,0 +1,50 @@
+@import "../../variables";
+@import "../../rems";
+
+.gamescore {
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.gamescore__team {
+    display: block;
+    flex-grow: 1;
+    font-weight: $font-weight-bold;
+    font-size: $rem16;
+    line-height: $rem24;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: $rem21;
+        line-height: $rem30;
+    }
+}
+
+.gamescore__score {
+    color: $color-blue-main;
+    display: block;
+    font-weight: $font-weight-bold;
+    font-size: $rem16;
+    line-height: $rem24;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 $rem10;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: $rem21;
+        line-height: $rem30;
+        padding: 0 $rem30;
+    }
+}
+
+.gamescore__score--upcoming {
+    color: $color-blue-button;
+}
+
+.gamescore__team--home {
+    text-align: right;
+}
+
+.gamescore__team--away {
+    text-align: left;
+}

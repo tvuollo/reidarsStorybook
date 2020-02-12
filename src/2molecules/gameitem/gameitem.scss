@@ -1,0 +1,80 @@
+@import "../../variables";
+@import "../../rems";
+
+.gameitem {
+    background-color: $color-gray-bg-light;
+    position: relative;
+    @media (min-width: $breakpoint-tablet) {
+        width: $rem420;
+    }
+}
+
+.gameitem--report {
+    @media (min-width: $breakpoint-tablet) {
+        width: 100%;
+    }
+}
+
+.gameitem__header {
+    background-color: $color-blue-main;
+    color: #fff;
+    font-size: $rem14;
+    line-height: $rem21;
+    margin: 0;
+    padding: $rem10;
+    text-align: center;
+}
+
+.gameitem__header--upcoming {
+    background-color: $color-blue-button;
+}
+
+.gameitem__score {
+    padding: $rem30 $rem10;
+}
+
+.gameitem__list {
+    background-color: $color-gray-bg-dark;
+    margin: 0;
+    padding: $rem20 $rem10;
+    text-align: center;
+}
+
+.gameitem__listitem {
+    @media (min-width: $breakpoint-tablet) {
+        display: inline;
+        margin: 0 $rem5;
+    }
+}
+
+.gameitem__listlink {
+    font-weight: $font-weight-bold;
+    font-size: $rem13;
+    line-height: $rem19;
+    text-transform: uppercase;
+}
+
+.gameitem__badge {
+    background-color: #000;
+    bottom: 100%;
+    color: #fff;
+    display: block;
+    font-weight: $font-weight-bold;
+    font-size: $rem12;
+    line-height: $rem18;
+    margin-bottom: -$rem4;
+    padding: $rem6 $rem14;
+    position: absolute;
+    right: -$rem4;
+    text-transform: uppercase;
+}
+
+.gameitem__scorers {
+    color: $color-gray-detail;
+    font-weight: $font-weight-bold;
+    font-size: $rem13;
+    line-height: $rem18;
+    padding: 0 $rem10 $rem30;
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -5,6 +5,8 @@ export const cssOverrides = {
             padding: 0;
         }
         .displayCode {
+            max-height: 300px;
+            overflow: auto;
             padding: 1rem;
         }
         .copyButton {}

@@ -1,4 +1,5 @@
 import img from './../../assets/img/demo-article-2.png';
+import { ReadmoreLink } from './../../1atoms/link/link';
 
 const Archiveitem = `<div class="archiveitem">
     <a class="archiveitem__imagelink" href="#">
@@ -13,9 +14,7 @@ const Archiveitem = `<div class="archiveitem">
         <p class="archiveitem__text">
             Viikon takainen 4-0 tappio Kiekkosille aiheutti Reidarsin valmennusjohdossa tahattoman paniikkinappulan painamisen, ja kevatkauden toiseen otteluun laitettiin uusiksi niin aloittava maalivahti, pakkiparit kuin hyokkayskentatkin. Eipa sita...
         </p>
-        <a href="#" class="link">
-            Lue lisaa
-        </a>
+        ${ReadmoreLink}
     </div>
 </div>`;
 

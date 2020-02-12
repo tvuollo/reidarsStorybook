@@ -1,3 +1,4 @@
-const Link = `<a class="link" href="#">Kaikki uutiset</a>`;
+const AllnewsLink = `<a class="link" href="#">Kaikki uutiset</a>`;
+const ReadmoreLink = `<a class="link" href="#">Lue lisaa</a>`;
 
-export default Link;
+export { AllnewsLink, ReadmoreLink };

@@ -8,8 +8,8 @@
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook -c .storybook -o .out",
         "dev": "webpack --config webpack.config.dev.js",
-        "build": "rimraf dist && webpack --config webpack.config.prod.js",
-        "clean": "rimraf dist"
+        "build": "rimraf bundle && webpack --config webpack.config.prod.js",
+        "clean": "rimraf bundle"
     },
     "dependencies": {
         "@pickra/copy-code-block": "^1.2.0"

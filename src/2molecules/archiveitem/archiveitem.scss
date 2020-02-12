@@ -1,0 +1,41 @@
+@import "../../variables";
+@import "../../rems";
+
+.archiveitem {
+    display: flex;
+}
+
+.archiveitem__image {
+    align-self: flex-start;
+    display: none;
+
+    @media (min-width: $breakpoint-tablet) {
+        display: inline-block;
+        height: auto;
+        margin-right: $rem30;
+        width: $rem240;
+    }
+
+    @media (min-width: $rem60) {
+        margin-right: $rem60;
+    }
+}
+
+.archiveitem__title {
+    font-size: $rem18;
+    font-weight: $font-weight-black;
+    margin-bottom: $rem15;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: $rem21;
+    }
+}
+
+.archiveitem__text {
+    line-height: 200%;
+    margin-bottom: $rem10;
+
+    @media (min-width: $breakpoint-tablet) {
+        margin-bottom: $rem30;
+    }
+}

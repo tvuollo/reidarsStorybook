@@ -1,0 +1,95 @@
+@import "../../variables";
+@import "../../rems";
+
+$newsitem-text-shadow: 1px 1px 0px #000;
+
+.newsitem {
+    background-color: $color-blue-main;
+    border-radius: $border-radius-default;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: $rem240;
+    justify-content: flex-end;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    width: $rem320;
+
+    @media (min-width: $breakpoint-tablet) {
+        height: $rem320;
+        width: $rem500;
+    }
+}
+
+.newsitem__image {
+    display: none;
+}
+
+.newsitem__bg {
+    background-color: rgba(transparent,0);
+    background-blend-mode: multiply;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: $transition-default;
+}
+
+.newsitem__content {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    display: block;
+    padding: $rem30 $rem15 $rem15;
+    position: relative;
+    transition: $transition-default;
+
+    @media (min-width: $breakpoint-tablet) {
+        padding: $rem60 $rem30 $rem30;
+    }
+}
+
+.newsitem__title {
+    display: block;
+    font-size: $rem16;
+    font-weight: $font-weight-bold;
+    line-height: 130%;
+    text-shadow: $newsitem-text-shadow;
+    text-transform: uppercase;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: $rem21;
+    }
+}
+
+.newsitem__meta {
+    display: block;
+    font-weight: $font-weight-medium;
+    font-size: $rem12;
+    margin-top: $rem10;
+    text-shadow: $newsitem-text-shadow;
+    text-transform: uppercase;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: $rem14;
+    }
+}
+
+.newsitem:hover,
+.newsitem:focus,
+.newsitem.hover {
+    color: #fff;
+
+    .newsitem__bg {
+        background-color: rgba($color-blue-main,1);
+        background-blend-mode: hard-light;
+        transform: scale(1.2) rotate(5deg);
+    }
+
+    .newsitem__content {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    }
+}

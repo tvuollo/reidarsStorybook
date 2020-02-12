@@ -1,0 +1,37 @@
+@import "../../variables";
+
+$link-padding-y: (50-22.4)/2/16;
+
+.link {
+    color: $color-blue-button;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: $font-weight-bold;
+    line-height: normal;
+    padding: #{$link-padding-y}rem 0;
+    position: relative;
+    text-transform: uppercase;
+    transition: $transition-default;
+    z-index: 1;
+
+    &:before {
+        background-color: $color-blue-button;
+        bottom: 7px;
+        content: '';
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        transition: $transition-default;
+    }
+
+    &:hover,
+    &:focus {
+        color: $color-blue-main;
+
+        &:before {
+            background-color: $color-blue-main
+        }
+    }
+}

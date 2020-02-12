@@ -1,0 +1,38 @@
+@import "../../variables";
+@import "../../rems";
+
+.chevron {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    border: 1px solid $color-blue-button;
+    border-radius: $border-radius-default;
+    display: inline-block;
+    font-size: 0;
+    height: $rem50;
+    overflow: hidden;
+    text-indent: #{(100/16)}rem;
+    transition: $transition-default;
+    width: $rem50;
+
+    &:hover {
+        border-color: $color-blue-main;
+    }
+}
+
+.chevron--left {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Imljb24vbmF2aWdhdGlvbi9jaGV2cm9uX3JpZ2h0XzI0cHgiPgo8cGF0aCBpZD0iaWNvbi9uYXZpZ2F0aW9uL2NoZXZyb25fcmlnaHRfMjRweF8yIiBkPSJNMTkuMDYwMSAyNEwyMC45NDAxIDIyLjEyTDE0LjgzMzQgMTZMMjAuOTQwMSA5Ljg4TDE5LjA2MDEgOEwxMS4wNjAxIDE2TDE5LjA2MDEgMjRaIiBmaWxsPSIjMDA0RDlBIi8+CjwvZz4KPC9zdmc+Cg==");
+    &:hover,
+    &:focus {
+        background-position: 25% 50%;
+    }
+}
+
+.chevron--right {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Imljb24vbmF2aWdhdGlvbi9jaGV2cm9uX3JpZ2h0XzI0cHgiPgo8cGF0aCBpZD0iaWNvbi9uYXZpZ2F0aW9uL2NoZXZyb25fcmlnaHRfMjRweF8yIiBkPSJNMTIuOTM5OSA4TDExLjA1OTkgOS44OEwxNy4xNjY2IDE2TDExLjA1OTkgMjIuMTJMMTIuOTM5OSAyNEwyMC45Mzk5IDE2TDEyLjkzOTkgOFoiIGZpbGw9IiMwMDREOUEiLz4KPC9nPgo8L3N2Zz4K");
+
+    &:hover,
+    &:focus {
+        background-position: 75% 50%;
+    }
+}

@@ -1,0 +1,20 @@
+$font: "reidars";
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$color-blue-main: #036;
+$color-blue-button: #004D9A;
+$color-black-headline: #333;
+$color-black-body: #222;
+$color-gray-detail: #606060;
+
+$border-radius-default: #{(6/16)}rem;
+
+$transition-default: all 0.2s ease-in-out;
+
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;

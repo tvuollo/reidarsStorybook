@@ -6,9 +6,11 @@
     font-weight: $font-weight-black;
     font-size: $rem24;
     line-height: $rem36;
+    margin-bottom: $rem15;
 
     @media (min-width: $breakpoint-tablet) {
         font-size: $rem42;
         line-height: $rem60;
+        margin-bottom: $rem30;
     }
 }

@@ -9,4 +9,4 @@ const NewsItemHtml = `<a href="#" class="newsitem">
     </span>
 </a>`;
 
-export default NewsItemHtml;
+export { NewsItemHtml };

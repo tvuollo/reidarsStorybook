@@ -1,0 +1,15 @@
+@import "../../variables";
+@import "../../rems";
+
+.newslist__slider {
+    overflow-x: auto;
+}
+
+.newslist__items {
+    display: flex;
+    margin: 0 -$rem15;
+}
+
+.newslist__itemwrap {
+    margin: 0 $rem15;
+}

@@ -6,6 +6,6 @@ import { MetaTextHtml, BigMetaTextHtml, WhiteMetaTextHtml, VideoMetaTextHtml } f
 export const MetaText = () => MetaTextHtml + copyCodeBlock(MetaTextHtml, cssOverrides);
 export const BigMetaText = () => BigMetaTextHtml + copyCodeBlock(BigMetaTextHtml, cssOverrides);
 export const WhiteMetaText = () => WhiteMetaTextHtml + copyCodeBlock(WhiteMetaTextHtml, cssOverrides);
-export const VideoMetaText = () => MetaTextHtml + copyCodeBlock(VideoMetaTextHtml, cssOverrides);
+export const VideoMetaText = () => VideoMetaTextHtml + copyCodeBlock(VideoMetaTextHtml, cssOverrides);
 
 export default { title: 'Atoms/MetaText' };

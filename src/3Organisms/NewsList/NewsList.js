@@ -1,10 +1,8 @@
-import { NewsListTitleHtml } from './../../1Atoms/ListTitle/ListTitle';
+import { NewsListHeaderHtml } from './../../2Molecules/ListHeader/ListHeader';
 import { NewsItemHtml } from './../../2Molecules/NewsItem/NewsItem';
 
 const NewsListHtml = `<div class="newslist">
-    <div class="newslist__header">
-        ${NewsListTitleHtml}
-    </div>
+    ${NewsListHeaderHtml}
     <div class="newslist__slider">
         <div class="newslist__items">
             <div class="newslist__itemwrap">

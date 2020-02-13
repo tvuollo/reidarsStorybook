@@ -4,12 +4,12 @@
 .listheader {
     display: flex;
     justify-content: space-between;
-    margin-bottom: $rem30;
 }
 
 .listheader__controls {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: $rem30;
 }
 
 .listheader__chevrons {

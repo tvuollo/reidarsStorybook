@@ -1,0 +1,14 @@
+@import "../../variables";
+@import "../../rems";
+
+.listtitle {
+    color: $color-black-headline;
+    font-weight: $font-weight-black;
+    font-size: $rem24;
+    line-height: $rem36;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: $rem42;
+        line-height: $rem60;
+    }
+}

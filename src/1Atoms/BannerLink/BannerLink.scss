@@ -1,0 +1,17 @@
+@import "../../variables";
+
+.bannerlink {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+    display: block;
+}
+
+.bannerlink__image {
+    display: block;
+    transition: $transition-default;
+    width: 100%;
+    &:hover,
+    &:focus {
+        opacity: 0.75;
+    }
+}

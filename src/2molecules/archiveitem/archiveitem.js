@@ -18,4 +18,4 @@ const ArchiveItemHtml = `<div class="archiveitem">
     </div>
 </div>`;
 
-export default ArchiveItemHtml;
+export { ArchiveItemHtml };

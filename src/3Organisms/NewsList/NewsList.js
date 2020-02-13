@@ -29,4 +29,4 @@ const NewsListHtml = `<div class="newslist">
     </div>
 </div>`;
 
-export default NewsListHtml;
+export { NewsListHtml };

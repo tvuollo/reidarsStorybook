@@ -2,8 +2,10 @@
 @import "../../rems";
 
 .gameslist__slider {
+    margin-top: -$rem30;
     overflow-x: auto;
     overflow-y: visible !important;
+    padding-top: $rem30;
 }
 
 .gameslist__items {

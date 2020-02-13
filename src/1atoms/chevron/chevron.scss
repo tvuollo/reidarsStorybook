@@ -2,10 +2,10 @@
 @import "../../rems";
 
 .chevron {
+    background-color: transparent;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 32px 32px;
-    border: 1px solid $color-blue-button;
     border-radius: $border-radius-default;
     display: inline-block;
     font-size: 0;
@@ -16,7 +16,7 @@
     width: $rem50;
 
     &:hover {
-        border-color: $color-blue-main;
+        background-color: rgba(0,0,0,.05);
     }
 }
 

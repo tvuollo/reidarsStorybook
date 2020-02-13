@@ -1,0 +1,16 @@
+@import "../../variables";
+@import "../../rems";
+
+.gameslist__slider {
+    overflow-x: auto;
+    overflow-y: visible !important;
+}
+
+.gameslist__items {
+    display: flex;
+    margin: 0 -$rem15;
+}
+
+.gameslist__item {
+    margin: 0 $rem15;
+}

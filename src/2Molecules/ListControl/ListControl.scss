@@ -1,0 +1,11 @@
+@import "../../variables";
+@import "../../rems";
+
+.listcontrol {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.listcontrol__item {
+    margin-left: $rem30;
+}

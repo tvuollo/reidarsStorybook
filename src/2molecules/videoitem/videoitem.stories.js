@@ -1,8 +1,8 @@
 import copyCodeBlock from '@pickra/copy-code-block';
 import { cssOverrides } from './../../../.storybook/copyCodeBlockOverrides';
 import './../../main.scss';
-import VideoitemHtml from './videoitem';
+import VideoItemHtml from './VideoItem';
 
-export const Videoitem = () => VideoitemHtml + copyCodeBlock(VideoitemHtml, cssOverrides);
+export const VideoItem = () => VideoItemHtml + copyCodeBlock(VideoItemHtml, cssOverrides);
 
-export default { title: 'Molecules/Videoitem' };
+export default { title: 'Molecules/VideoItem' };

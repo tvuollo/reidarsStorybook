@@ -1,4 +1,4 @@
-const GamescorePast = `<div class="gamescore">
+const GameScorePastHtml = `<div class="gamescore">
     <span class="gamescore__team gamescore__team--home">
         Reidars
     </span>
@@ -10,7 +10,7 @@ const GamescorePast = `<div class="gamescore">
     </span>
 </div>`;
 
-const GamescoreUpcoming = `<div class="gamescore">
+const GameScoreUpcomingHtml = `<div class="gamescore">
     <span class="gamescore__team gamescore__team--home">
         Reidars
     </span>
@@ -22,4 +22,4 @@ const GamescoreUpcoming = `<div class="gamescore">
     </span>
 </div>`;
 
-export { GamescorePast, GamescoreUpcoming };
+export { GameScorePastHtml, GameScoreUpcomingHtml };

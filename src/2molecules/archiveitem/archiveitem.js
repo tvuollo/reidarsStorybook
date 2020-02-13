@@ -1,7 +1,7 @@
 import img from './../../assets/img/demo-article-2.png';
-import { ReadmoreLink } from './../../1atoms/link/link';
+import { ReadMoreLinkHtml } from './../../1Atoms/Link/Link';
 
-const Archiveitem = `<div class="archiveitem">
+const ArchiveItemHtml = `<div class="archiveitem">
     <a class="archiveitem__imagelink" href="#">
         <img class="archiveitem__image" src="${img}" alt="Verta, hikea ja kyyn eleita - Reidarsille jai luu kateen" />
     </a>
@@ -14,8 +14,8 @@ const Archiveitem = `<div class="archiveitem">
         <p class="archiveitem__text">
             Viikon takainen 4-0 tappio Kiekkosille aiheutti Reidarsin valmennusjohdossa tahattoman paniikkinappulan painamisen, ja kevatkauden toiseen otteluun laitettiin uusiksi niin aloittava maalivahti, pakkiparit kuin hyokkayskentatkin. Eipa sita...
         </p>
-        ${ReadmoreLink}
+        ${ReadMoreLinkHtml}
     </div>
 </div>`;
 
-export default Archiveitem;
+export default ArchiveItemHtml;

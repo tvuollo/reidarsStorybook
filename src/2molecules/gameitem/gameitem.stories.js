@@ -1,11 +1,11 @@
 import copyCodeBlock from '@pickra/copy-code-block';
 import { cssOverrides } from './../../../.storybook/copyCodeBlockOverrides';
 import './../../main.scss';
-import { GameitemPast, GameitemUpcoming, GameitemNext, GameitemReport } from './gameitem';
+import { GameItemPastHtml, GameItemUpcomingHtml, GameItemNextHtml, GameItemReportHtml } from './GameItem';
 
-export const PastGameItem = () => GameitemPast + copyCodeBlock(GameitemPast, cssOverrides);
-export const UpcomingGameItem = () => GameitemUpcoming + copyCodeBlock(GameitemUpcoming, cssOverrides);
-export const NextGameItem = () => GameitemNext + copyCodeBlock(GameitemNext, cssOverrides);
-export const ReportGameItem = () => GameitemReport + copyCodeBlock(GameitemReport, cssOverrides);
+export const GameItemPast = () => GameItemPastHtml + copyCodeBlock(GameItemPastHtml, cssOverrides);
+export const GameItemUpcoming = () => GameItemUpcomingHtml + copyCodeBlock(GameItemUpcomingHtml, cssOverrides);
+export const GameItemNext = () => GameItemNextHtml + copyCodeBlock(GameItemNextHtml, cssOverrides);
+export const GameItemReport = () => GameItemReportHtml + copyCodeBlock(GameItemReportHtml, cssOverrides);
 
-export default { title: 'Molecules/Gameitem' };
+export default { title: 'Molecules/GameItem' };

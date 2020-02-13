@@ -1,10 +1,10 @@
 import copyCodeBlock from '@pickra/copy-code-block';
 import { cssOverrides } from './../../../.storybook/copyCodeBlockOverrides';
 import './../../main.scss';
-import { GamesListtitle, NewsListtitle, VideosListtitle } from './listtitle';
+import { GamesListtitleHtml, NewsListtitleHtml, VideosListtitleHtml } from './ListTitle';
 
-export const GamesListTitle = () => GamesListtitle + copyCodeBlock(GamesListtitle, cssOverrides);
-export const NewsListTitle = () => NewsListtitle + copyCodeBlock(NewsListtitle, cssOverrides);
-export const VideosListTitle = () => VideosListtitle + copyCodeBlock(VideosListtitle, cssOverrides);
+export const GamesListTitle = () => GamesListtitleHtml + copyCodeBlock(GamesListtitleHtml, cssOverrides);
+export const NewsListTitle = () => NewsListtitleHtml + copyCodeBlock(NewsListtitleHtml, cssOverrides);
+export const VideosListTitle = () => VideosListtitleHtml + copyCodeBlock(VideosListtitleHtml, cssOverrides);
 
 export default { title: 'Atoms/ListTitle' };

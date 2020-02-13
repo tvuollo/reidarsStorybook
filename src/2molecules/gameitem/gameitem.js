@@ -1,11 +1,11 @@
-import { GamescorePast, GamescoreUpcoming } from './../../1atoms/gamescore/gamescore';
+import { GameScorePastHtml, GameScoreUpcomingHtml } from './../../1Atoms/GameScore/GameScore';
 
-const GameitemPast = `<div class="gameitem">
+const GameItemPastHtml = `<div class="gameitem">
     <p class="gameitem__header">
         Sarjapeli | Keskiviikkona 20.9.2019 klo 2:30
     </p>
     <div class="gameitem__score">
-        ${GamescorePast}
+        ${GameScorePastHtml}
     </div>
     <ul class="gameitem__list">
         <li class="gameitem__listitem">
@@ -26,12 +26,12 @@ const GameitemPast = `<div class="gameitem">
     </ul>
 </div>`;
 
-const GameitemUpcoming = `<div class="gameitem">
+const GameItemUpcomingHtml = `<div class="gameitem">
     <p class="gameitem__header gameitem__header--upcoming">
         Sarjapeli | Keskiviikkona 20.9.2019 klo 2:30
     </p>
     <div class="gameitem__score">
-        ${GamescoreUpcoming}
+        ${GameScoreUpcomingHtml}
     </div>
     <ul class="gameitem__list">
         <li class="gameitem__listitem">
@@ -47,13 +47,13 @@ const GameitemUpcoming = `<div class="gameitem">
     </ul>
 </div>`;
 
-const GameitemNext = `<div class="gameitem">
+const GameItemNextHtml = `<div class="gameitem">
     <p class="gameitem__header gameitem__header--upcoming">
         Sarjapeli | Keskiviikkona 20.9.2019 klo 2:30
     </p>
     <p class="gameitem__badge">Seuraava peli</p>
     <div class="gameitem__score">
-        ${GamescoreUpcoming}
+        ${GameScoreUpcomingHtml}
     </div>
     <ul class="gameitem__list">
         <li class="gameitem__listitem">
@@ -69,12 +69,12 @@ const GameitemNext = `<div class="gameitem">
     </ul>
 </div>`;
 
-const GameitemReport = `<div class="gameitem gameitem--report">
+const GameItemReportHtml = `<div class="gameitem gameitem--report">
     <p class="gameitem__header">
         Sarjapeli | Keskiviikkona 20.9.2019 klo 2:30
     </p>
     <div class="gameitem__score">
-        ${GamescorePast}
+        ${GameScorePastHtml}
     </div>
     <p class="gameitem__scorers">
         Maalintekijat: Mikkola 6, Juotasniemi, Reijonen
@@ -98,4 +98,4 @@ const GameitemReport = `<div class="gameitem gameitem--report">
     </ul>
 </div>`;
 
-export { GameitemPast, GameitemUpcoming, GameitemNext, GameitemReport };
+export { GameItemPastHtml, GameItemUpcomingHtml, GameItemNextHtml, GameItemReportHtml };

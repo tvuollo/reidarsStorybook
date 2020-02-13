@@ -1,8 +1,8 @@
 import copyCodeBlock from '@pickra/copy-code-block';
 import { cssOverrides } from './../../../.storybook/copyCodeBlockOverrides';
 import './../../main.scss';
-import ArchiveitemHtml from './archiveitem';
+import ArchiveItemHtml from './ArchiveItem';
 
-export const Archiveitem = () => ArchiveitemHtml + copyCodeBlock(ArchiveitemHtml, cssOverrides);
+export const ArchiveItem = () => ArchiveItemHtml + copyCodeBlock(ArchiveItemHtml, cssOverrides);
 
-export default { title: 'Molecules/Archiveitem' };
+export default { title: 'Molecules/ArchiveItem' };

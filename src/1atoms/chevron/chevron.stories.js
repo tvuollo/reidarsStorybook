@@ -1,9 +1,9 @@
 import copyCodeBlock from '@pickra/copy-code-block';
 import { cssOverrides } from './../../../.storybook/copyCodeBlockOverrides';
 import './../../main.scss';
-import { ChevronLeft, ChevronRight } from './chevron';
+import { ChevronLeftHtml, ChevronRightHtml } from './Chevron';
 
-export const LeftChevron = () => ChevronLeft + copyCodeBlock(ChevronLeft, cssOverrides);
-export const RightChevron = () => ChevronRight + copyCodeBlock(ChevronRight, cssOverrides);
+export const ChevronLeft = () => ChevronLeftHtml + copyCodeBlock(ChevronLeftHtml, cssOverrides);
+export const ChevronRight = () => ChevronRightHtml + copyCodeBlock(ChevronRightHtml, cssOverrides);
 
 export default { title: 'Atoms/Chevron' };

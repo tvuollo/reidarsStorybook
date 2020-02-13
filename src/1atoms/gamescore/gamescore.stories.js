@@ -1,9 +1,9 @@
 import copyCodeBlock from '@pickra/copy-code-block';
 import { cssOverrides } from './../../../.storybook/copyCodeBlockOverrides';
 import './../../main.scss';
-import { GamescorePast, GamescoreUpcoming } from './gamescore';
+import { GameScorePastHtml, GameScoreUpcomingHtml } from './GameScore';
 
-export const PastGameScore = () => GamescorePast + copyCodeBlock(GamescorePast, cssOverrides);
-export const UpcomingGameScore = () => GamescoreUpcoming + copyCodeBlock(GamescoreUpcoming, cssOverrides);
+export const GameScorePast = () => GameScorePastHtml + copyCodeBlock(GameScorePastHtml, cssOverrides);
+export const GameScoreUpcoming = () => GameScoreUpcomingHtml + copyCodeBlock(GameScoreUpcomingHtml, cssOverrides);
 
-export default { title: 'Atoms/Gamescore' };
+export default { title: 'Atoms/GameScore' };

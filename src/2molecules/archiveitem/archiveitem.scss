@@ -37,11 +37,19 @@
 .archiveitem__title {
     font-size: $rem18;
     font-weight: $font-weight-black;
-    margin-bottom: $rem15;
+    margin-bottom: $rem5;
 
     @media (min-width: $breakpoint-tablet) {
         font-size: $rem21;
     }
+}
+
+.archiveitem__meta {
+    color: $color-gray-detail;
+    display: block;
+    font-size: $rem14;
+    line-height: $rem21;
+    margin-bottom: $rem15;
 }
 
 .archiveitem__text {

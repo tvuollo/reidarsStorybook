@@ -11,6 +11,9 @@ const ArchiveItemHtml = `<div class="archiveitem">
                 Verta, hikea ja kyyn eleita - Reidarsille jai luu kateen
             </a>
         </h3>
+        <p class="archiveitem__meta">
+            10.10.2019 | Uutinen
+        </p>
         <p class="archiveitem__text">
             Viikon takainen 4-0 tappio Kiekkosille aiheutti Reidarsin valmennusjohdossa tahattoman paniikkinappulan painamisen, ja kevatkauden toiseen otteluun laitettiin uusiksi niin aloittava maalivahti, pakkiparit kuin hyokkayskentatkin. Eipa sita...
         </p>

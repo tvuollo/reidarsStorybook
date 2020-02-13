@@ -16,4 +16,4 @@ const VideoItemHtml = `<a href="#" class="videoitem">
     </span>
 </a>`;
 
-export default VideoItemHtml;
+export { VideoItemHtml };

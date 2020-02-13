@@ -1,5 +1,5 @@
 import { GamesListHtml } from './../../3Organisms/GamesList/GamesList';
-import { BannerLinksHtml } from './../../2Molecules/BannerLinks/BannerLinks';
+import { BannerLinksHtml } from './../../3Organisms/BannerLinks/BannerLinks';
 import { NewsListHtml } from './../../3Organisms/NewsList/NewsList';
 import { VideosListHtml } from './../../3Organisms/VideosList/VideosList';
 

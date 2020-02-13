@@ -1,5 +1,6 @@
 import img from './../../assets/img/demo-article-2.png';
 import { ReadMoreLinkHtml } from './../../1Atoms/Link/Link';
+import { MetaTextHtml } from './../../1Atoms/MetaText/MetaText';
 
 const ArchiveItemHtml = `<div class="archiveitem">
     <a class="archiveitem__imagelink" href="#">
@@ -11,9 +12,9 @@ const ArchiveItemHtml = `<div class="archiveitem">
                 Verta, hikea ja kyyn eleita - Reidarsille jai luu kateen
             </a>
         </h3>
-        <p class="archiveitem__meta">
-            10.10.2019 | Uutinen
-        </p>
+        <div class="archiveitem__meta">
+            ${MetaTextHtml}
+        </div>
         <p class="archiveitem__text">
             Viikon takainen 4-0 tappio Kiekkosille aiheutti Reidarsin valmennusjohdossa tahattoman paniikkinappulan painamisen, ja kevatkauden toiseen otteluun laitettiin uusiksi niin aloittava maalivahti, pakkiparit kuin hyokkayskentatkin. Eipa sita...
         </p>

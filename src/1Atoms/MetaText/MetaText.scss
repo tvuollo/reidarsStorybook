@@ -1,0 +1,32 @@
+@import "../../variables";
+@import "../../rems";
+
+.articlemeta {
+    color: $color-gray-detail;
+    display: block;
+    font-size: $rem12;
+    line-height: $rem18;
+    text-transform: uppercase;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: $rem14;
+        line-height: $rem21;
+    }
+}
+
+.articlemeta--big {
+    color: $color-black-headline;
+    font-weight: $font-weight-medium;
+    font-size: $rem16;
+    line-height: $rem24;
+}
+
+.articlemeta--white {
+    color: #fff;
+    font-weight: $font-weight-medium;
+    text-shadow: $text-shadow-default;
+}
+
+.articlemeta--video {
+    text-transform: none;
+}

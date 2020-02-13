@@ -1,4 +1,5 @@
 import img from './../../assets/img/demo-article-1.png';
+import { VideoMetaTextHtml } from './../../1Atoms/MetaText/MetaText';
 
 const VideoItemHtml = `<a href="#" class="videoitem">
     <span class="videoitem__thumb" style="background-image:url(${img});">
@@ -8,9 +9,7 @@ const VideoItemHtml = `<a href="#" class="videoitem">
     <span class="videoitem__title">
         OFFSIDE REIDARS: We will remain!
     </span>
-    <span class="videoitem__meta">
-        Reidars | 4 paivaa sitten
-    </span>
+    ${VideoMetaTextHtml}
     <span class="videoitem__text">
         Beerleague hockeycore from Lapland! Digital single available on most music streaming services.
     </span>

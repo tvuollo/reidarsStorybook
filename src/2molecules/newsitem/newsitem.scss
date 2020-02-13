@@ -1,7 +1,7 @@
 @import "../../variables";
 @import "../../rems";
 
-$newsitem-text-shadow: 1px 1px 0px #000;
+$newsitem-text-shadow: $text-shadow-default;
 
 .newsitem {
     background-color: $color-blue-main;
@@ -57,24 +57,12 @@ $newsitem-text-shadow: 1px 1px 0px #000;
     font-size: $rem16;
     font-weight: $font-weight-bold;
     line-height: 130%;
+    margin-bottom: $rem10;
     text-shadow: $newsitem-text-shadow;
     text-transform: uppercase;
 
     @media (min-width: $breakpoint-tablet) {
         font-size: $rem21;
-    }
-}
-
-.newsitem__meta {
-    display: block;
-    font-weight: $font-weight-medium;
-    font-size: $rem12;
-    margin-top: $rem10;
-    text-shadow: $newsitem-text-shadow;
-    text-transform: uppercase;
-
-    @media (min-width: $breakpoint-tablet) {
-        font-size: $rem14;
     }
 }
 

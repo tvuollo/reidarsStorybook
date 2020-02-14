@@ -5,3 +5,34 @@
     margin: 0 auto;
     max-width: $rem800;
 }
+
+.article__header {
+    margin-bottom: $rem30;
+    @media (min-width: $breakpoint-tablet) {
+        margin-bottom: $rem60;
+    }
+}
+
+.article__score {
+    margin-bottom: $rem30;
+
+    @media (min-width: $breakpoint-tablet) {
+        margin-bottom: $rem60;
+    }
+}
+
+.article__content {
+    margin-bottom: $rem30;
+
+    @media (min-width: $breakpoint-tablet) {
+        margin-bottom: $rem60;
+    }
+}
+
+.article__image {
+    margin-bottom: $rem30;
+
+    @media (min-width: $breakpoint-tablet) {
+        margin-bottom: $rem60;
+    }
+}

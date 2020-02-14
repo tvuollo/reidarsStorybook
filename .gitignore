@@ -109,3 +109,4 @@ dist
 /.vs/VSWorkspaceState.json
 
 /.out
+/bundle

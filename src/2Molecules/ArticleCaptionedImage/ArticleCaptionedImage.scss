@@ -1,0 +1,9 @@
+@import "../../variables";
+@import "../../rems";
+
+.articlecaptionedimage__caption {
+    color: #000;
+    font-weight: $font-weight-medium;
+    line-height: $rem24;
+    margin-top: $rem30;
+}

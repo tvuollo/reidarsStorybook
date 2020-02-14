@@ -1,0 +1,11 @@
+@import "../../variables";
+@import "../../rems";
+
+.articlebody {
+    line-height: 200%;
+    margin-bottom: 2rem;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 18px;
+    }
+}

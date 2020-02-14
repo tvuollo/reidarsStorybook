@@ -1,0 +1,7 @@
+@import "../../variables";
+@import "../../rems";
+
+.article {
+    margin: 0 auto;
+    max-width: $rem800;
+}

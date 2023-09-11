@@ -14,6 +14,7 @@ const config = {
       },
     },
     "@storybook/addon-interactions",
+    "@whitespace/storybook-addon-html",
   ],
   framework: {
     name: "@storybook/html-webpack5",

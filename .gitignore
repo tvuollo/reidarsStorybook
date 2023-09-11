@@ -110,3 +110,5 @@ dist
 
 /.out
 /bundle
+/build
+/docs

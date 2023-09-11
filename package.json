@@ -4,30 +4,7 @@
     "description": "Storybook.js project for www.reidarshockey.com",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "storybook": "start-storybook -p 6006",
-        "build-storybook": "rimraf docs && build-storybook -c .storybook -o docs",
-        "dev": "webpack --config webpack.config.dev.js",
-        "build": "rimraf bundle && webpack --config webpack.config.prod.js",
         "clean": "rimraf bundle"
-    },
-    "dependencies": {
-        "@pickra/copy-code-block": "^1.2.0"
-    },
-    "devDependencies": {
-        "@babel/core": "^7.8.4",
-        "@storybook/html": "^5.3.10",
-        "babel-loader": "^8.0.6",
-        "css-loader": "^3.4.2",
-        "file-loader": "^4.2.0",
-        "mini-css-extract-plugin": "^0.8.0",
-        "node-sass": "^4.13.1",
-        "rimraf": "^2.6.2",
-        "sass-loader": "^8.0.2",
-        "style-loader": "^1.1.3",
-        "url-loader": "^2.2.0",
-        "webpack": "^4.41.0",
-        "webpack-cli": "^3.3.9"
     },
     "repository": {
         "type": "git",

@@ -1,9 +1,9 @@
-@import "../../variables";
+@import "../../functions";
 @import "../../rems";
+@import "../../variables";
 
 .videoitem {
     display: block;
-    width: $rem320;
 }
 
 .videoitem__thumb {
@@ -14,10 +14,21 @@
     background-size: cover;
     border-radius: $border-radius-default;
     display: block;
-    height: $rem180;
+    height: calc((100vw - #{($rem48)}) * .50);
+    min-height: calc((100vw - #{($rem48)}) * .50);
     position: relative;
     transition: $transition-default;
-    width: $rem320;
+    width: 100%;
+
+    @media (min-width: $breakpoint-tablet) {
+        height: calc((100vw - #{($rem48)}) / 2 * .50 - #{($rem32)});
+        min-height: calc((100vw - #{($rem48)}) / 2 * .50 - #{($rem32)});
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        height: calc((100vw - #{($rem48)}) / 3 * .50 - #{($rem32)});
+        min-height: calc((100vw - #{($rem48)}) / 3 * .50 - #{($rem32)});
+    }
 
     &:before {
         background-color: rgba(0,0,0,0.0);
@@ -78,10 +89,12 @@
     bottom: $rem10;
     color: #fff;
     display: block;
-    font-weight: $font-weight-bold;
     font-size: $rem14;
-    line-height: $rem21;
-    padding: $rem1 $rem8;
+    @include responsive-font(14, 18);
+    font-weight: $font-weight-bold;
+    line-height: 1.5em;
+    @include responsive-padding-x(8, 16);
+    @include responsive-padding-y(1, 2);
     position: absolute;
     right: $rem10;
     text-transform: uppercase;
@@ -90,17 +103,17 @@
 .videoitem__title {
     color: #000;
     display: block;
+    @include responsive-font(16, 21);
     font-weight: $font-weight-medium;
-    font-size: $rem16;
-    line-height: $rem24;
+    line-height: 1.5em;
     margin: $rem10 0;
 }
 
 .videoitem__text {
     color: $color-gray-detail;
     display: block;
-    font-size: $rem14;
-    line-height: $rem21;
+    @include responsive-font(14, 16);
+    line-height: 1.5em;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

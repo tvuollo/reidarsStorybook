@@ -8,9 +8,6 @@ const GamesListHeaderHtml = `<div class="listheader">
         <div class="listheader__button">
             ${AllGamesLinkHtml}
         </div>
-        <div class="listheader__chevrons">
-            ${ChevronsHtml}
-        </div>
     </div>
 </div>`;
 
@@ -20,9 +17,6 @@ const NewsListHeaderHtml = `<div class="listheader">
         <div class="listheader__button">
             ${AllNewsLinkHtml}
         </div>
-        <div class="listheader__chevrons">
-            ${ChevronsHtml}
-        </div>
     </div>
 </div>`;
 
@@ -31,9 +25,6 @@ const VideosListHeaderHtml = `<div class="listheader">
     <div class="listheader__controls">
         <div class="listheader__button">
             ${AllVideosLinkHtml}
-        </div>
-        <div class="listheader__chevrons">
-            ${ChevronsHtml}
         </div>
     </div>
 </div>`;

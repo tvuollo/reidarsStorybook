@@ -4,36 +4,40 @@ import { ArticleBodyHtml } from './../../1Atoms/ArticleBody/ArticleBody';
 import { ArticleCaptionedImageHtml } from './../../2Molecules/ArticleCaptionedImage/ArticleCaptionedImage';
 import { EndLineHtml } from './../../1Atoms/EndLine/EndLine';
 
-const BaseArticleHtml = `<article class="article">
-    <div class="article__header">
-        ${ArticleHeaderHtml}
-    </div>
-    <div class="article__content">
-        ${ArticleBodyHtml}
-    </div>
-    <div class="article__image">
-        ${ArticleCaptionedImageHtml}
-    </div>
-    <div class="article__content">
-        ${ArticleBodyHtml}
-    </div>
-    ${EndLineHtml}
-</article>`;
+const BaseArticleHtml = `<div class="container">
+    <article class="article">
+        <div class="article__header">
+            ${ArticleHeaderHtml}
+        </div>
+        <div class="article__content">
+            ${ArticleBodyHtml}
+        </div>
+        <div class="article__image">
+            ${ArticleCaptionedImageHtml}
+        </div>
+        <div class="article__content">
+            ${ArticleBodyHtml}
+        </div>
+        ${EndLineHtml}
+    </article>
+</div>`;
 
-const GameArticleHtml = `<article class="article">
-    <div class="article__header">
-        ${ArticleHeaderHtml}
-    </div>
-    <div class="article__score">
-        ${GameItemReportHtml}
-    </div>
-    <div class="article__content">
-        ${ArticleBodyHtml}
-    </div>
-    <div class="article__image">
-        ${ArticleCaptionedImageHtml}
-    </div>
-    ${EndLineHtml}
-</article>`;
+const GameArticleHtml = `<div class="container">
+    <article class="article">
+        <div class="article__header">
+            ${ArticleHeaderHtml}
+        </div>
+        <div class="article__score">
+            ${GameItemReportHtml}
+        </div>
+        <div class="article__content">
+            ${ArticleBodyHtml}
+        </div>
+        <div class="article__image">
+            ${ArticleCaptionedImageHtml}
+        </div>
+        ${EndLineHtml}
+    </article>
+</div>`;
 
 export { BaseArticleHtml, GameArticleHtml };

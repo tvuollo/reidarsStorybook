@@ -1,3 +1,4 @@
+@import "../../functions";
 @import "../../variables";
 
 $link-padding-y: (50-22.4)/2/16;
@@ -5,9 +6,9 @@ $link-padding-y: (50-22.4)/2/16;
 .link {
     color: $color-blue-button;
     display: inline-block;
-    font-size: 1rem;
+    @include responsive-font(14, 18);
     font-weight: $font-weight-bold;
-    line-height: normal;
+    line-height: 1.25em;
     padding: #{$link-padding-y}rem 0;
     position: relative;
     text-transform: uppercase;
@@ -28,10 +29,10 @@ $link-padding-y: (50-22.4)/2/16;
 
     &:hover,
     &:focus {
-        color: $color-blue-main;
+        color: $color-black-body;
 
         &:before {
-            background-color: $color-blue-main
+            background-color: $color-black-body;
         }
     }
 }

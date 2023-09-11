@@ -1,12 +1,10 @@
-@import "../../variables";
+@import "../../functions";
 @import "../../rems";
+@import "../../variables";
 
 .gameitem {
     background-color: $color-gray-bg-light;
     position: relative;
-    @media (min-width: $breakpoint-tablet) {
-        width: $rem420;
-    }
 }
 
 .gameitem--report {
@@ -18,10 +16,12 @@
 .gameitem__header {
     background-color: $color-blue-main;
     color: #fff;
-    font-size: $rem14;
-    line-height: $rem21;
+    @include responsive-font(14, 18);
+    @include responsive-lineheight(21, 24);
     margin: 0;
-    padding: $rem10;
+    padding-left: $rem8;
+    padding-right: $rem8;
+    @include responsive-padding-y(8, 16);
     text-align: center;
 }
 
@@ -29,28 +29,28 @@
     background-color: $color-blue-button;
 }
 
-.gameitem__score {
-    padding: $rem30 $rem10;
-}
-
 .gameitem__list {
     background-color: $color-gray-bg-dark;
     margin: 0;
-    padding: $rem20 $rem10;
+    padding-left: $rem16;
+    padding-right: $rem16;
+    @include responsive-padding-y(10, 32);
     text-align: center;
 }
 
 .gameitem__listitem {
+    margin: $rem8 0;
+
     @media (min-width: $breakpoint-tablet) {
         display: inline;
-        margin: 0 $rem5;
+        margin: 0 .5em;
     }
 }
 
 .gameitem__listlink {
+    @include responsive-font(14, 18);
     font-weight: $font-weight-bold;
-    font-size: $rem13;
-    line-height: $rem19;
+    @include responsive-lineheight(16, 21);
     text-transform: uppercase;
 }
 
@@ -72,9 +72,9 @@
 .gameitem__scorers {
     color: $color-gray-detail;
     font-weight: $font-weight-bold;
-    font-size: $rem13;
-    line-height: $rem18;
-    padding: 0 $rem10 $rem30;
+    @include responsive-font(13, 16);
+    @include responsive-lineheight(18, 21);
+    padding-bottom: 3em;
     text-align: center;
     text-transform: uppercase;
 }

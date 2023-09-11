@@ -1,0 +1,61 @@
+@import "variables";
+
+@mixin responsive-font ($small, $big) {
+    $font-size: calc(#{($small / 16)}rem + #{($big - $small)} * ((100vw - #{($breakpoint-mobile)}) / #{($breakpoint-desktop-points - $breakpoint-mobile-points)}));
+    font-size: #{($small / 16)}rem;
+    font-size: clamp(#{($small / 16)}rem, #{($font-size)}, #{($big / 16)}rem);
+}
+
+@mixin responsive-height ($small, $big) {
+    $height: calc(#{($small / 16)}rem + #{($big - $small)} * ((100vw - #{($breakpoint-mobile)}) / #{($breakpoint-desktop-points - $breakpoint-mobile-points)}));
+    min-height: #{($small / 16)}rem;
+    min-height: clamp(#{($small / 16)}rem, #{($height)}, #{($big / 16)}rem);
+    height: #{($small / 16)}rem;
+    height: clamp(#{($small / 16)}rem, #{($height)}, #{($big / 16)}rem);
+}
+
+@mixin responsive-lineheight($small, $big) {
+    $line-height: calc(#{($small / 16)}rem + #{($big - $small)} * ((100vw - #{($breakpoint-mobile)}) / #{($breakpoint-desktop-points - $breakpoint-mobile-points)}));
+    line-height: #{($small / 16)}rem;
+    line-height: clamp(#{($small / 16)}rem, #{($line-height)}, #{($big / 16)}rem);
+}
+
+@mixin responsive-margin-bottom ($small, $big) {
+    $margin-size: calc(#{($small / 16)}rem + #{($big - $small)} * ((100vw - #{($breakpoint-mobile)}) / #{($breakpoint-desktop-points - $breakpoint-mobile-points)}));
+    margin-bottom: #{($small / 16)}rem;
+    margin-bottom: clamp(#{($small / 16)}rem, #{($margin-size)}, #{($big / 16)}rem);
+}
+
+@mixin responsive-padding-x ($small, $big) {
+    $padding: calc(#{($small / 16)}rem + #{($big - $small)} * ((100vw - #{($breakpoint-mobile)}) / #{($breakpoint-desktop-points - $breakpoint-mobile-points)}));
+    padding-left: #{($small / 16)}rem;
+    padding-left: clamp(#{($small / 16)}rem, #{($padding)}, #{($big / 16)}rem);
+    padding-right: #{($small / 16)}rem;
+    padding-right: clamp(#{($small / 16)}rem, #{($padding)}, #{($big / 16)}rem);
+}
+
+@mixin responsive-padding-y ($small, $big) {
+    $padding: calc(#{($small / 16)}rem + #{($big - $small)} * ((100vw - #{($breakpoint-mobile)}) / #{($breakpoint-desktop-points - $breakpoint-mobile-points)}));
+    padding-top: #{($small / 16)}rem;
+    padding-top: clamp(#{($small / 16)}rem, #{($padding)}, #{($big / 16)}rem);
+    padding-bottom: #{($small / 16)}rem;
+    padding-bottom: clamp(#{($small / 16)}rem, #{($padding)}, #{($big / 16)}rem);
+}
+
+@mixin responsive-width ($small, $big) {
+    $width: calc(#{($small / 16)}rem + #{($big - $small)} * ((100vw - #{($breakpoint-mobile)}) / #{($breakpoint-desktop-points - $breakpoint-mobile-points)}));
+    min-width: #{($small / 16)}rem;
+    min-width: clamp(#{($small / 16)}rem, #{($width)}, #{($big / 16)}rem);
+    width: #{($small / 16)}rem;
+    width: clamp(#{($small / 16)}rem, #{($width)}, #{($big / 16)}rem);
+}
+
+@mixin image-default-animation () {
+    transition: $transition-default;
+
+    &:hover,
+    &:focus,
+    &:active {
+        filter: brightness(.8);
+    }
+}

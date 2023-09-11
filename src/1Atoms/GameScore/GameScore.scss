@@ -1,5 +1,6 @@
-@import "../../variables";
+@import "../../functions";
 @import "../../rems";
+@import "../../variables";
 
 .gamescore {
     align-items: center;
@@ -10,31 +11,21 @@
 .gamescore__team {
     display: block;
     flex-grow: 1;
+    @include responsive-font(18, 32);
     font-weight: $font-weight-bold;
-    font-size: $rem16;
-    line-height: $rem24;
-
-    @media (min-width: $breakpoint-tablet) {
-        font-size: $rem21;
-        line-height: $rem30;
-    }
+    @include responsive-lineheight(24, 36);
 }
 
 .gamescore__score {
     color: $color-blue-main;
     display: block;
     font-weight: $font-weight-bold;
-    font-size: $rem16;
-    line-height: $rem24;
+    @include responsive-font(21, 32);
+    @include responsive-lineheight(24, 36);
     text-align: center;
     text-transform: uppercase;
-    padding: 0 $rem10;
-
-    @media (min-width: $breakpoint-tablet) {
-        font-size: $rem21;
-        line-height: $rem30;
-        padding: 0 $rem30;
-    }
+    @include responsive-padding-x(10, 24);
+    @include responsive-padding-y(32, 48);
 }
 
 .gamescore__score--upcoming {

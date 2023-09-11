@@ -1,16 +1,37 @@
-@import "../../variables";
+@import "../../functions";
 @import "../../rems";
-
-.newslist__slider {
-    overflow-x: auto;
-    overflow-y: visible;
-}
+@import "../../variables";
 
 .newslist__items {
-    display: flex;
-    margin: 0 -$rem15;
+    @media (min-width: $breakpoint-tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -#{($rem16)};
+    }
 }
 
 .newslist__item {
-    margin: 0 $rem15;
+    @include responsive-margin-bottom(30, 60);
+
+    @media (min-width: $breakpoint-tablet) {
+        flex: 1 0 50%;
+        flex: 1 0 calc(50% - #{($rem32)});
+        margin-left: $rem16;
+        margin-right: $rem16;
+        min-width: 50%;
+        min-width: calc(50% - #{($rem32)});
+        width: 50%;
+        width: calc(50% - #{($rem32)});
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        flex: 1 0 33.33%;
+        flex: 1 0 calc(100% / 3 - #{($rem32)});
+        margin-left: $rem16;
+        margin-right: $rem16;
+        min-width: 33.33%;
+        min-width: calc(100% / 3 - #{($rem32)});
+        width: 33.33%;
+        width: calc(100% / 3 - #{($rem32)});
+    }
 }

@@ -1,14 +1,9 @@
+@import "../../functions";
 @import "../../variables";
-@import "../../rems";
 
 .articletitle {
     color: $color-black-headline;
     font-weight: $font-weight-black;
-    font-size: $rem24;
-    line-height: $rem30;
-
-    @media (min-width: $breakpoint-tablet) {
-        font-size: $rem50;
-        line-height: $rem60;
-    }
+    @include responsive_font(21, 54);
+    line-height: 1.25em;
 }

@@ -7,3 +7,9 @@
 @import "2Molecules/Molecules";
 @import "3Organisms/Organisms";
 @import "4Templates/Templates";
+
+.container {
+    margin: 0 auto;
+    max-width: #{(1440/16)}rem;
+    @include responsive-padding-x(24, 72);
+}

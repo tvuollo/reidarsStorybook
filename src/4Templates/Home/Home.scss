@@ -1,5 +1,5 @@
-@import "../../rems";
+@import "../../functions";
 
 .homesection {
-    margin-bottom: $rem60;
+    @include responsive-margin-bottom(60, 80);
 }

@@ -1,16 +1,11 @@
-@import "../../variables";
+@import "../../functions";
 @import "../../rems";
+@import "../../variables";
 
 .listtitle {
     color: $color-black-headline;
+    @include responsive-font(21, 56);
     font-weight: $font-weight-black;
-    font-size: $rem24;
-    line-height: $rem36;
-    margin-bottom: $rem15;
-
-    @media (min-width: $breakpoint-tablet) {
-        font-size: $rem42;
-        line-height: $rem60;
-        margin-bottom: $rem30;
-    }
+    line-height: 1.5em;
+    margin-bottom: $rem24;
 }

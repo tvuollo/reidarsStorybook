@@ -1,5 +1,6 @@
-@import "../../variables";
+@import "../../functions";
 @import "../../rems";
+@import "../../variables";
 
 $newsitem-text-shadow: $text-shadow-default;
 
@@ -9,16 +10,22 @@ $newsitem-text-shadow: $text-shadow-default;
     color: #fff;
     display: flex;
     flex-direction: column;
-    height: $rem240;
+    height: calc((100vw - #{($rem48)}) * .66);
+    min-height: calc((100vw - #{($rem48)}) * .66);
     justify-content: flex-end;
     max-width: 100%;
     overflow: hidden;
     position: relative;
-    width: $rem320;
+    width: 100%;
 
     @media (min-width: $breakpoint-tablet) {
-        height: $rem320;
-        width: $rem500;
+        height: calc((100vw - #{($rem48)}) / 2 * .66 - #{($rem32)});
+        min-height: calc((100vw - #{($rem48)}) / 2 * .66 - #{($rem32)});
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        height: calc((100vw - #{($rem48)}) / 3 * .66 - #{($rem32)});
+        min-height: calc((100vw - #{($rem48)}) / 3 * .66 - #{($rem32)});
     }
 }
 
@@ -41,29 +48,23 @@ $newsitem-text-shadow: $text-shadow-default;
 }
 
 .newsitem__content {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
     display: block;
+    @include responsive-padding-x(15, 30);
+    @include responsive-padding-y(15, 30);
     padding: $rem30 $rem15 $rem15;
     position: relative;
     transition: $transition-default;
-
-    @media (min-width: $breakpoint-tablet) {
-        padding: $rem60 $rem30 $rem30;
-    }
 }
 
 .newsitem__title {
     display: block;
-    font-size: $rem16;
+    @include responsive-font(16, 21);
     font-weight: $font-weight-bold;
-    line-height: 130%;
+    line-height: 1.3em;
     margin-bottom: $rem10;
     text-shadow: $newsitem-text-shadow;
     text-transform: uppercase;
-
-    @media (min-width: $breakpoint-tablet) {
-        font-size: $rem21;
-    }
 }
 
 .newsitem:hover,
@@ -72,12 +73,6 @@ $newsitem-text-shadow: $text-shadow-default;
     color: #fff;
 
     .newsitem__bg {
-        background-color: rgba($color-blue-main,1);
-        background-blend-mode: hard-light;
-        transform: scale(1.2) rotate(5deg);
-    }
-
-    .newsitem__content {
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+        filter: brightness(.8);
     }
 }

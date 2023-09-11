@@ -17,8 +17,14 @@ $border-radius-default: #{(6/16)}rem;
 
 $text-shadow-default: 1px 1px 0px #000;
 
-$transition-default: all 0.2s ease-in-out;
+$transition-default: all 0.15s ease-in-out;
 
-$breakpoint-mobile: 600px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1200px;
+$breakpoint-mobile-points: 600;
+$breakpoint-tablet-points: 768;
+$breakpoint-laptop-points: 1200;
+$breakpoint-desktop-points: 1440;
+
+$breakpoint-mobile: #{($breakpoint-mobile-points)}px;
+$breakpoint-tablet: #{($breakpoint-tablet-points)}px;
+$breakpoint-laptop: #{($breakpoint-laptop-points)}px;
+$breakpoint-desktop: #{($breakpoint-desktop-points)}px;

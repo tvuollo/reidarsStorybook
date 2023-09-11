@@ -1,58 +1,51 @@
-@import "../../variables";
+@import "../../functions";
 @import "../../rems";
+@import "../../variables";
 
 .archiveitem {
-    display: flex;
+    display: block;
+
+    @media (min-width: $breakpoint-mobile) {
+        display: flex;
+    }
 }
 
 .archiveitem__imagelink {
-    align-self: flex-start;
-    display: none;
+    display: block;
+    margin: 0 0 $rem16;
 
-    @media (min-width: $breakpoint-tablet) {
-        display: block;
+    @media (min-width: $breakpoint-mobile) {
+        align-self: flex-start;
         height: auto;
-        margin-right: $rem30;
-        min-width: $rem240;
-        width: $rem240;
+        margin: 0 0 0 $rem24;
+        order: 1;
+        @include responsive-width(140, 240);
     }
-
-    @media (min-width: $rem60) {
-        margin-right: $rem60;
-    }
-
 }
 
 .archiveitem__image {
-    box-shadow: 0 0 0 0 rgba(0,0,0,0);
-    transition: $transition-default;
+    @include image-default-animation;
+}
 
-    &:hover,
-    &:focus {
-        box-shadow: 0 12px 12px -12px rgba(0,0,0,0.3);
-        transform: rotate(2deg) scale(1.1);
+.archiveitem__content {
+    @media (min-width: $breakpoint-mobile) {
+        flex-grow: 1;
+        order: 0;
     }
 }
 
 .archiveitem__title {
-    font-size: $rem18;
+    @include responsive-font(18, 28);
     font-weight: $font-weight-black;
-    margin-bottom: $rem5;
-
-    @media (min-width: $breakpoint-tablet) {
-        font-size: $rem21;
-    }
+    @include responsive-margin-bottom(8, 16);
 }
 
 .archiveitem__meta {
-    margin-bottom: $rem15;
+    @include responsive-margin-bottom(16, 24);
 }
 
 .archiveitem__text {
+    @include responsive-font(16, 18);
     line-height: 200%;
-    margin-bottom: $rem10;
-
-    @media (min-width: $breakpoint-tablet) {
-        margin-bottom: $rem15;
-    }
+    @include responsive-margin-bottom(10, 16);
 }

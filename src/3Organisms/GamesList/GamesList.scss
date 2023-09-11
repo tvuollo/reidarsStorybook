@@ -1,5 +1,6 @@
-@import "../../variables";
+@import "../../functions";
 @import "../../rems";
+@import "../../variables";
 
 .gameslist__slider {
     margin-top: -$rem30;
@@ -9,10 +10,20 @@
 }
 
 .gameslist__items {
+    align-items: stretch;
     display: flex;
     margin: 0 -$rem15;
+
+    @media (min-width: $breakpoint-tablet) {
+        margin: 0 -$rem30;
+    }
 }
 
 .gameslist__item {
     margin: 0 $rem15;
+    @include responsive-width(300, 480);
+
+    @media (min-width: $breakpoint-tablet) {
+        margin: 0 $rem30;
+    }
 }

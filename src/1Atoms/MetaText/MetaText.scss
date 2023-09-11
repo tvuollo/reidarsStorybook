@@ -4,14 +4,9 @@
 .articlemeta {
     color: $color-gray-detail;
     display: block;
-    font-size: $rem12;
-    line-height: $rem18;
+    @include responsive-font(12, 16);
+    @include responsive-lineheight(18, 21);
     text-transform: uppercase;
-
-    @media (min-width: $breakpoint-tablet) {
-        font-size: $rem14;
-        line-height: $rem21;
-    }
 }
 
 .articlemeta--big {

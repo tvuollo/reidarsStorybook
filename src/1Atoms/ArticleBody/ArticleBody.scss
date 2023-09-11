@@ -1,11 +1,7 @@
-@import "../../variables";
-@import "../../rems";
+@import "../../functions";
 
-.articlebody {
-    line-height: 200%;
-    margin-bottom: 2rem;
-
-    @media (min-width: $breakpoint-tablet) {
-        font-size: 18px;
-    }
+.articlebody p {
+    @include responsive-font(16, 21);
+    line-height: 2em;
+    margin-bottom: 2em;
 }

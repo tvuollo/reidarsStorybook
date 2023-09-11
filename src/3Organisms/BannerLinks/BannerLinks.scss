@@ -4,19 +4,14 @@
 .bannerlinks {
     @media (min-width: $breakpoint-tablet) {
         display: flex;
+        margin: 0 -#{(60/2/16)}rem;
     }
 }
 
-.bannerlinks__item--odd {
+.bannerlinks__item {
     margin-bottom: $rem30;
-    @media (min-width: $breakpoint-tablet) {
-        margin-bottom: 0;
-        margin-right: $rem15;
-    }
-}
 
-.bannerlinks__item--even {
     @media (min-width: $breakpoint-tablet) {
-        margin-left: $rem15;
+        margin: 0 #{(60/2/16)}rem 0;
     }
 }

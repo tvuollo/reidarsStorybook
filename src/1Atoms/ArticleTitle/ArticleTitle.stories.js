@@ -1,8 +1,6 @@
-import copyCodeBlock from '@pickra/copy-code-block';
-import { cssOverrides } from './../../../.storybook/copyCodeBlockOverrides';
 import './../../main.scss';
 import { ArticleTitleHtml } from './ArticleTitle';
 
-export const ArticleTitle = () => ArticleTitleHtml + copyCodeBlock(ArticleTitleHtml, cssOverrides);
+export const ArticleTitle = () => ArticleTitleHtml;
 
 export default { title: 'Atoms/ArticleTitle' };

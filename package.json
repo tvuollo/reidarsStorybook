@@ -1,19 +1,36 @@
 {
-    "name": "reidarsstorybook",
-    "version": "1.0.0",
-    "description": "Storybook.js project for www.reidarshockey.com",
-    "main": "index.js",
-    "scripts": {
-        "clean": "rimraf bundle"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/tvuollo/reidarsStorybook.git"
-    },
-    "author": "Tuomas Vuollo",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/tvuollo/reidarsStorybook/issues"
-    },
-    "homepage": "https://github.com/tvuollo/reidarsStorybook#readme"
+  "name": "reidarsstorybook",
+  "version": "1.0.0",
+  "description": "Storybook.js project for www.reidarshockey.com",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "sass": "sass src/main.scss build/reidars.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tvuollo/reidarsStorybook.git"
+  },
+  "author": "Tuomas Vuollo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tvuollo/reidarsStorybook/issues"
+  },
+  "homepage": "https://github.com/tvuollo/reidarsStorybook#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.15",
+    "@storybook/addon-essentials": "^7.4.0",
+    "@storybook/addon-interactions": "^7.4.0",
+    "@storybook/addon-links": "^7.4.0",
+    "@storybook/addon-styling": "^1.3.7",
+    "@storybook/blocks": "^7.4.0",
+    "@storybook/html": "^7.4.0",
+    "@storybook/html-webpack5": "^7.4.0",
+    "@storybook/testing-library": "^0.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.66.1",
+    "storybook": "^7.4.0"
+  }
 }

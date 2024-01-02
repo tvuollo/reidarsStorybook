@@ -1,0 +1,10 @@
+@import "../../functions";
+@import "../../rems";
+@import "../../variables";
+
+.logo {
+    display: block;
+    height: auto;
+    max-width: $rem240;
+    width: 100%;
+}

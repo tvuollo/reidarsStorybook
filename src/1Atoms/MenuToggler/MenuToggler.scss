@@ -1,0 +1,49 @@
+@import "../../functions";
+@import "../../rems";
+@import "../../variables";
+
+.menutoggler {
+    background: none;
+    border: none;
+    color: white;
+    display: block;
+    font-family: inherit;
+    font-size: $rem16;
+    font-weight: $font-weight-medium;
+    height: $rem48;
+    line-height: $rem48;
+    padding: 0 $rem16 0 $rem24;
+    position: relative;
+    text-shadow: $text-shadow-default;
+    transition: $transition-default;
+    appearance: initial;
+    -webkit-appearance: initial;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: black;
+        color: $color-black-full;
+        text-shadow: none;
+    }
+}
+
+.menutoggler__stripe {
+    background: $color-white;
+    box-shadow: 1px 1px 0 rgba(0,0,0,.5);
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transition: $transition-default;
+    width: $rem12;
+
+    &--1 {
+        margin-top: -#{($rem4)};
+    }
+
+    &--3 {
+        margin-top: #{($rem4)};
+    }
+}

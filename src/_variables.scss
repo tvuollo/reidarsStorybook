@@ -7,15 +7,19 @@ $font-weight-black: 900;
 
 $color-blue-main: #036;
 $color-blue-button: #004D9A;
+$color-blue-brand: #002fa3;
 $color-black-headline: #333;
 $color-black-body: #222;
+$color-black-full: #000;
 $color-gray-detail: #606060;
 $color-gray-bg-light: #f0f0f0;
 $color-gray-bg-dark: #D4D6D9;
+$color-white: #fff;
 
 $border-radius-default: #{(6/16)}rem;
 
-$text-shadow-default: 1px 1px 0px #000;
+$text-shadow-default: 1px 1px 0px $color-black-full;
+$text-shadow-big: 2px 2px 0px $color-black-full;
 
 $transition-default: all 0.15s ease-in-out;
 

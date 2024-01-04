@@ -28,14 +28,31 @@
     left: 0;
     position: absolute;
     top: 50%;
+    transform-origin: center center;
     transition: $transition-default;
     width: $rem12;
 
     &--1 {
         margin-top: -#{($rem4)};
+
+        &.menutoggler__stripe--close {
+            margin: 0;
+            transform: rotate(45deg);
+        }
+    }
+
+    &--2 {
+        &.menutoggler__stripe--close {
+            display: none;
+        }
     }
 
     &--3 {
         margin-top: #{($rem4)};
+
+        &.menutoggler__stripe--close {
+            margin: 0;
+            transform: rotate(-45deg);
+        }
     }
 }

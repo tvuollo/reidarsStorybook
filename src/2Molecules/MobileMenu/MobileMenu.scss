@@ -1,0 +1,57 @@
+@import "../../variables";
+@import "../../rems";
+
+.mobilemenu {
+    background: $color-black-full;
+    bottom: 0;
+    display: none;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    &--open {
+        display: block;
+    }
+}
+
+.mobilemenu__logo {
+    position: absolute;
+    left: $rem16;
+    top: $rem16;
+    width: $rem80;
+}
+
+.mobilemenu__toggler {
+    position: absolute;
+    right: $rem16;
+    top: $rem16;
+}
+
+.mobilemenu__inner {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: $rem48 $rem24;
+}
+
+.mobilenav__list {
+    text-align: center;
+}
+
+.mobilenav__listitem {
+    display: block;
+}
+
+.mobilenav__link {
+    color: $color-white;
+    display: block;
+    @include responsive-font(24, 48);
+    font-weight: $font-weight-bold;
+    letter-spacing: -#{(0.24/16)}em;
+    line-height: $rem34;
+    padding: .15em 0;
+    text-shadow: $text-shadow-big;
+}

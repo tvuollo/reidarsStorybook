@@ -18,14 +18,6 @@
     transition: $transition-default;
     appearance: initial;
     -webkit-appearance: initial;
-
-    &:hover,
-    &:focus,
-    &:active {
-        background: black;
-        color: $color-black-full;
-        text-shadow: none;
-    }
 }
 
 .menutoggler__stripe {

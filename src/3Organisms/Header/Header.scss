@@ -106,13 +106,15 @@
     width: $rem120;
 
     @media (min-width: $breakpoint-tablet) {
-        left: -#{($rem44)};
-        top: -#{$rem16};
+        left: -#{($rem48)};
+        top: -#{$rem8};
+        width: $rem180;
     }
 
     @media (min-width: $breakpoint-laptop) {
         left: -#{($rem44)};
         top: -#{$rem16};
+        width: $rem240;
     }
 }
 
@@ -121,6 +123,10 @@
     right: $rem24;
     top: $rem6;
     z-index: 2;
+
+    @media (min-width: $breakpoint-tablet) {
+        display: none;
+    }
 }
 
 .navigation__list {

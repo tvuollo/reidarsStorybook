@@ -26,6 +26,12 @@
     margin-bottom: clamp(#{($small / 16)}rem, #{($margin-size)}, #{($big / 16)}rem);
 }
 
+@mixin responsive-margin-top ($small, $big) {
+    $margin-size: calc(#{($small / 16)}rem + #{($big - $small)} * ((100vw - #{($breakpoint-mobile)}) / #{($breakpoint-desktop-points - $breakpoint-mobile-points)}));
+    margin-top: #{($small / 16)}rem;
+    margin-top: clamp(#{($small / 16)}rem, #{($margin-size)}, #{($big / 16)}rem);
+}
+
 @mixin responsive-padding-x ($small, $big) {
     $padding: calc(#{($small / 16)}rem + #{($big - $small)} * ((100vw - #{($breakpoint-mobile)}) / #{($breakpoint-desktop-points - $breakpoint-mobile-points)}));
     padding-left: #{($small / 16)}rem;

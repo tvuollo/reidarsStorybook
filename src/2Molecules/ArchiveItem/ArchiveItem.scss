@@ -25,6 +25,7 @@
 
 .archiveitem__image {
     @include image-default-animation;
+    height: auto;
 }
 
 .archiveitem__content {

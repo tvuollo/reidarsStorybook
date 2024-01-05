@@ -1,0 +1,64 @@
+@import "../../functions";
+@import "../../rems";
+@import "../../variables";
+
+.superhero {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: #{(1440/16)}rem;
+    position: relative;
+}
+
+.superhero__content {
+    background-color: $color-black-full;
+    @include responsive-padding-x(16, 44);
+    @include responsive-padding-y(24, 44);
+
+    @media (min-width: $breakpoint-laptop) {
+        background: rgba(0, 0, 0, 0.50);
+        bottom: 0;
+        left: 50%;
+        position: absolute;
+        right: 0;
+        z-index: 2;
+    }
+}
+
+.superhero__title {
+    color: $color-white;
+    @include responsive-font(18, 42);
+    font-weight: $font-weight-bold;
+    line-height: 120%;
+    @include responsive-margin-bottom(16, 32);
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5), 2px 2px 0px $color-black-full;
+}
+
+.superhero__text {
+    color: $color-white;
+    @include responsive-font(14, 18);
+    font-weight: $font-weight-medium;
+    line-height: normal;
+    @include responsive-margin-bottom(8, 24);
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.50), 1px 1px 0px $color-black-full;
+}
+
+.superhero__link {
+    color: $color-white;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.50), 1px 1px 0px $color-black-full;
+
+    &:before {
+        background-color: $color-white;
+        bottom: 0;
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.50), 1px 1px 0px 0px $color-black-full;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: lighten($color-blue-button, 60%);
+
+        &:before {
+            background-color: lighten($color-blue-button, 60%);
+        }
+    }
+}

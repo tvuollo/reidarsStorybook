@@ -3,9 +3,13 @@
 @import "../../variables";
 
 .articlecaptionedimage__caption {
-    color: #000;
+    color: $color-black-full;
     @include responsive-font(16, 18);
     font-weight: $font-weight-medium;
     line-height: 1.5em;
-    margin-top: $rem30;
+    margin: $rem16 0 4em !important;
+}
+
+.wp-caption-text {
+    @extend .articlecaptionedimage__caption;
 }

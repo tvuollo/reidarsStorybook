@@ -1,10 +1,12 @@
+import { HeroHtml } from '../../1Atoms/Hero/Hero';
 import { ArticleHeaderHtml } from './../../2Molecules/ArticleHeader/ArticleHeader';
 import { GameItemReportHtml } from './../../2Molecules/GameItem/GameItem';
 import { ArticleBodyHtml } from './../../1Atoms/ArticleBody/ArticleBody';
 import { ArticleCaptionedImageHtml } from './../../2Molecules/ArticleCaptionedImage/ArticleCaptionedImage';
 import { EndLineHtml } from './../../1Atoms/EndLine/EndLine';
 
-const BaseArticleHtml = `<div class="container">
+const BaseArticleHtml = `${HeroHtml}
+<div class="container">
     <article class="article">
         <div class="article__header">
             ${ArticleHeaderHtml}
@@ -22,7 +24,8 @@ const BaseArticleHtml = `<div class="container">
     </article>
 </div>`;
 
-const GameArticleHtml = `<div class="container">
+const GameArticleHtml = `${HeroHtml}
+<div class="container">
     <article class="article">
         <div class="article__header">
             ${ArticleHeaderHtml}

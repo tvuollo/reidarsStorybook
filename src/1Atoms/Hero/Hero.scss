@@ -1,0 +1,14 @@
+@import "../../functions";
+@import "../../rems";
+@import "../../variables";
+
+.hero {
+    margin: $rem24 auto 0;
+    max-width: #{(1440/16)}rem;
+}
+
+.hero__image {
+    display: block;
+    height: auto;
+    width: 100%;
+}

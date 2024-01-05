@@ -1,2 +1,7 @@
 @import "../../variables";
+@import "../../functions";
 @import "../../rems";
+
+.archive {
+    @include responsive-margin-top(32, 80);
+}
